@@ -1,1 +1,251 @@
 @charset "utf-8";
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 공통 */
+* {
+  font-family: "SUIT", sans-serif;
+}
+
+.section {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section > div {
+  padding: 105px 0 105px;
+}
+
+/* 헤더 */
+.header {
+  width: 100%;
+  background: #eee;
+}
+
+.header-wrapper {
+  margin: 0 auto;
+  width: 1200px;
+  height: 45px;
+}
+
+.header-wrapper img {
+  padding-top: 8px;
+  width: 100px;
+}
+
+/* section-intro */
+.section-intro {
+  padding-top: 80px !important;
+  box-sizing: border-box;
+  background: #4533a7;
+}
+
+.section-intro .main-title {
+  font-size: 90px;
+  line-height: 1;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  font-family: "GmarketSansMedium";
+}
+
+.section-intro .main-title span {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 30px;
+}
+
+.btn-white {
+  display: inline-block;
+  width: 330px;
+  height: 50px;
+  line-height: 46px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  background: none;
+  box-sizing: border-box;
+}
+
+.sub-desc01 {
+  padding: 10px 0 30px;
+  font-size: 16px;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.title-red {
+  margin-right: 10px;
+  padding: 0 7px 5px;
+  background: #ff3c14;
+}
+
+/* section-free */
+.section-free {
+  background: #fed324;
+  box-sizing: border-box;
+  color: #1d1d1d;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+.section-title {
+  font-size: 35px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.secton-desc {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.btn-black {
+  display: inline-block;
+  width: 330px;
+  height: 50px;
+  line-height: 46px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border: 2px solid #111;
+  border-radius: 50px;
+  background: #111;
+  box-sizing: border-box;
+}
+
+.coupon {
+  position: relative;
+  margin: 60px auto 40px;
+  width: 350px;
+  height: 170px;
+  border: 3px solid #111;
+  border-radius: 35px 0 35px 0;
+  background: #fff;
+}
+
+.coupon p {
+  font-size: 65px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.coupon p span {
+  display: inline-block;
+  padding-bottom: 10px;
+  font-size: 23px;
+}
+
+.btn-desc {
+  padding-top: 15px;
+  font-size: 15px;
+  font-weight: 700;
+  opacity: 0.5;
+}
+
+.coupon-icon {
+  position: absolute;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  right: -30px;
+  top: -26px;
+  padding-top: 14px;
+  font-size: 19px;
+  color: #fff;
+  border-radius: 50px;
+  background: #5641c5;
+  box-sizing: border-box;
+}
+
+.section-slide {
+  background: #fff6e2;
+  overflow: hidden;
+}
+
+.tab-slide .list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.tab-slide .tab-button {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding: 10px 0;
+  width: 220px;
+  color: #e22700;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 50px;
+  border: 2px solid #e22700;
+  cursor: pointer;
+}
+
+.tab-slide .tab-button:last-child {
+  margin-right: 0;
+}
+
+.tab-slide .tab-content.show {
+    display: block;
+}
+
+.tab-slide .tab-content {
+    display: none;
+}
+
+.tab-button.red {
+    background: #e22700;
+    color: #fff;
+}
+
+.tab-content p {
+    padding-bottom: 50px;
+}
+
+
+
+/* 슬라이드 1 */
+.swiper1 {
+    height: 450px;
+}
+
+.swiper1 .swiper-slide img {
+    width: 300px;
+    height: auto;
+}
+
+.swiper1-wrapper {
+    height: 500px;
+    overflow: hidden;
+}
+
+/* .swiper1-wrapper:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 580px;
+    height: 700px;
+    left: 50%;
+    top: -110px;
+    transform: translate(-50%, 0);
+    background: url(/img/slider-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
+
+

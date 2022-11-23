@@ -6,8 +6,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header-wrapper">
+            <img src="https://www.busan.com/nas/wcms/public/pc/images/new/logo.png" alt="">
+        </div>
+    </header>
+    <main class="main">
+        <section class="section">
+            <div class="section-intro">
+                <h1 class="main-title"><span>The JoongAng <span class="title-red">plus</span> 런칭기념</span><br>무료 체험 이벤트</h1>
+                <p class="sub-desc01">2022.10.11(화) ~ 11.14(월)까지</p>
+                <a href="#" class="btn-white">Plus 바로 탐색하기</a>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-free">
+                <p class="section-subtitle">맘 편히 그리고 충분히,</p>
+                <h2 class="section-title">The JoongAng Plus 탐색하세요</h2>
+                <p class="secton-desc">
+                    지금 The JoongAng Plus를 구독하는 모든 분께 무료 체험 기회를 드립니다.<br>
+                    아래 버튼을 눌러 구독을 시작하고 1개월 간 맘껏 경험해 보세요!
+                </p>
+                <div class="coupon">
+                    <p>
+                        <span>무료체험권</span><br>1개월
+                    </p>
+                    <span class="coupon-icon">전원<br>증정</span>
+                </div>
+                <a href="#" class="btn-black">무료 체험 시작하기</a>
+                <p class="btn-desc">사전예약 신청자는 중복 참여가 불가합니다.</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-slide">
+                <p class="section-subtitle">반가워요!</p>
+                <h2 class="section-title">The JoongAng Plus</h2>
+                <div class="tab-slide">
+                    <ul class="list">
+                      <li class="tab-button red">깊이를 더하다</li>
+                      <li class="tab-button">특별함을 더하다</li>
+                      <li class="tab-button">유용함을 더하다</li>
+                    </ul>
+                    <div class="tab-content show">
+                        <p>맥락은 넓게 다루고 이슈는 깊게 파고 듭니다. IT, 엔터테인먼트 같은 보편적 주제도 입체적인 시각의 심층 취재 콘텐트로 만나보세요.</p>
+                        <div class="swiper1-wrapper">
+                            <div class="swiper1">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="/img/slider-img01.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/img/slider-img02.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-content">
+                        <p>기자들이 취재하기에 가능한 Plus 콘텐트만의 특별함을 누리세요. 정계 주요 인물들 간 관계도를 그리고 현안을 파악하며, 글로벌 시사의 핵심을 짚습니다.</p>
+                    </div>
+                    <div class="tab-content">
+                        <p>트렌디한 레시피, 밀레니얼 양육자를 위한 콘텐트, 돈버는 부동산에 대한 정보도 놓치지 마세요. 다채롭고 유용한 정보를 관심사에 맞춰 최적의 피드로 제공합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-content">
+
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-share">
+                
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-note">
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+
+    </footer>
+    <script>
+        //.section-slide 탭메뉴 스크립트
+        var tabBtn = $('.tab-button');
+        var tabContent = $('.tab-content');
+        
+        for (let i = 0; i < tabBtn.length; i++){
+            tabBtn.eq(i).on('click', function(){
+                tabBtn.removeClass('red');
+                tabBtn.eq(i).addClass('red');
+                tabContent.removeClass('show');
+                tabContent.eq(i).addClass('show');
+            });
+        };
+
+        //.section-slide 슬라이드
+        const swiper = new Swiper('.swiper1', {
+            // Optional parameters
+            direction: 'vertical',
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            spaceBetween: 100,
+            slidesPerView: 1,
+            mousewheel: {
+                invert: false,
+            },
+        });
+    </script>
 </body>
 </html>
