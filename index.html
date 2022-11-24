@@ -11,14 +11,16 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script> -->
 </head>
-<body>
+<body data-barba="wrapper">
     <header class="header">
         <div class="header-wrapper">
             <img src="https://www.busan.com/nas/wcms/public/pc/images/new/logo.png" alt="">
         </div>
     </header>
-    <main class="main">
+    <main class="main" data-barba="container" data-barba-namespace="home">
         <section class="section">
             <div class="section-intro">
                 <h1 class="main-title"><span>The JoongAng <span class="title-red">plus</span> 런칭기념</span><br>무료 체험 이벤트</h1>
@@ -237,6 +239,10 @@
             </div>
     </footer>
     <script>
+        barba.init({
+            // ...
+        })
+
         //.section-slide 탭메뉴 스크립트
         var tabBtn = $('.tab-button');
         var tabContent = $('.tab-content');
