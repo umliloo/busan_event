@@ -365,13 +365,14 @@ ul.note-list li {
 .footer-list1 {
     display: flex;
     width: 1200px;
+    padding: 15px 0;
     margin: 0 auto;
     justify-content: space-between;
 }
 
 .footer-list1-left {
     display: flex;
-    margin-top: 13px;
+    margin-top: 6px;
     font-size: 18px;
     align-items: center;
 }
@@ -391,4 +392,75 @@ ul.note-list li {
 
 .footer-list1-right li {
     margin-right: 25px;
+}
+
+.footer-inner {
+    background-color: #f4f5fa;
+}
+
+.footer-list2 {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0 70px;
+}
+
+.footer-list2-left img {
+    width: 180px;
+}
+
+.footer-list2-left {
+    margin-right: 70px;
+}
+
+.footer-company1 {
+    display: flex;
+}
+
+.footer-company2 {
+    display: flex;
+}
+
+.footer-list2-right {
+    color: #26322f;
+    font-size: 15px;
+}
+
+.footer-list2-right {
+    color: #26322f;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.footer-list2-right ul {
+    margin-bottom: 5px;
+}
+
+.copyright {
+    margin-bottom: 5px;
+}
+
+.footer-company1 li:after, .footer-company2 li:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 15px;
+    background: #bcbcbc;
+    right: -6px;
+    top: 2px;
+}
+
+.footer-company1 li, .footer-company2 li {
+    position: relative;
+    margin-right: 8px;
+}
+
+.footer-company1 li:last-child, .footer-company2 li:last-child {
+    margin-right: 0;
+}
+
+.footer-company1 li:last-child:after, .footer-company2 li:last-child:after {
+    display: none;
 }
