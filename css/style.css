@@ -22,7 +22,7 @@
   padding: 105px 0 105px;
 }
 
-/* 헤더 */
+/* header */
 .header {
   width: 100%;
   background: #eee;
@@ -38,6 +38,7 @@
   padding-top: 8px;
   width: 100px;
 }
+/* //header */
 
 /* section-intro */
 .section > div.section-intro {
@@ -80,7 +81,6 @@
   box-sizing: border-box;
 }
 
-
 .btn-white span:after,.btn-black span:after {
     content: '\00bb';
     position: absolute;
@@ -118,6 +118,8 @@
   padding: 0 7px 5px;
   background: #ff3c14;
 }
+/* //section-intro */
+
 
 /* section-free */
 .section-free {
@@ -247,10 +249,10 @@
 .tab-content p {
     padding-bottom: 50px;
 }
+/* //section-free */
 
 
-
-/* 슬라이드 1 */
+/* swiper 1 */
 .swiper1 {
     height: 450px;
 }
@@ -275,8 +277,7 @@
     top: -170px;
     left: 50%;
     transform: translate(-50%, 0);
-    background:
-    url(https://img.joongang.co.kr/pubimg/event/plus_event002/bg_info01_v4.png);
+    background:url(https://img.joongang.co.kr/pubimg/event/plus_event002/bg_info01_v4.png);
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 10;
@@ -306,6 +307,7 @@
   max-height: 4px;
 }
 
+/* section-share */
 .section-share {
     background: #4533a7;
 }
@@ -351,7 +353,6 @@
   100%{
     transform: scale(1);
   }
-  
 }
 
 .section-note {
@@ -395,8 +396,10 @@ ul.note-list li {
     position: relative;
     padding-left: 12px;
 }
+/* //section-share */
 
-/* 푸터 */
+
+/* footer */
 .footer-list1 {
     display: flex;
     width: 1200px;
@@ -422,7 +425,6 @@ ul.note-list li {
 
 .footer-list1-right {
     display: flex;
-    /* align-items: center; */
 }
 
 .footer-list1-right li {
@@ -467,7 +469,6 @@ ul.note-list li {
     font-weight: 600;
 }
 
-
 .footer-list2-right ul {
     margin-bottom: 5px;
 }
@@ -503,3 +504,4 @@ ul.note-list li {
 .footer-list2-left span {
     line-height: 100px;
 }
+/* //footer */
