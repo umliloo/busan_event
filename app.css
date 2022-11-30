@@ -1099,7 +1099,7 @@ p > a:hover:before {
 }
 [data-theme="ocean-light"] ::selection {
   background: rgba(49, 125, 237, 0.9);
-  color: #000;
+  color: #000;  
 }
 [data-theme="ocean-light"] .text-color-sun {
   color: #000;
