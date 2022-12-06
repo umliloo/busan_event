@@ -307,12 +307,16 @@
         
         for (let i = 0; i < tabBtn.length; i++){
             tabBtn.eq(i).on('click', function(){
-                tabBtn.removeClass('red');
-                tabBtn.eq(i).addClass('red');
-                tabContent.removeClass('show');
-                tabContent.eq(i).addClass('show');
+                openTab(i);
             });
         };
+
+        function openTab(activeTab){
+            tabBtn.removeClass('red');
+            tabBtn.eq(activeTab).addClass('red');
+            tabContent.removeClass('show');
+            tabContent.eq(activeTab).addClass('show');
+        }
 
         //.section-slide 슬라이드
         const swiper = new Swiper('.swiper1', {
@@ -343,14 +347,6 @@
             mousewheel: {
                 invert: false,
             },
-            // breakpoints: {
-            //     320: {
-            //         slidesPerView: 1,
-            //     },
-            //     640: {
-            //         slidesPerView: 2,
-            //     }
-            // }
         });
     </script>
 </body>
